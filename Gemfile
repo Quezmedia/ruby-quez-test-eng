@@ -22,6 +22,11 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'faker', '2.18.0'
+gem 'devise'
+gem 'pundit'
+gem 'sidekiq'
+gem 'redis-rails'
+gem 'ransack'
 
 group :development, :test do
   gem 'dotenv-rails', '2.7.6'
@@ -59,6 +64,8 @@ group :test do
   gem 'rexml'
 
   gem 'shoulda-matchers', '~> 4.5'
+  gem 'database_cleaner-active_record'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
